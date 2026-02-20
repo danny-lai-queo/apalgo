@@ -107,4 +107,12 @@ public abstract class SortTestBase {
         assertTrue(ary.length == 4);
         assertArrayEquals(new int[] {1,2, 3, 8}, ary);
     }
+
+    @Test
+    public void case06() {
+        int[] ary = {8,1,2,1,3,2};
+        sorter.sort(ary);
+        assertTrue(ary.length == 6);
+        assertArrayEquals(new int[] {1,1,2,2,3,8}, ary);
+    }
 }
